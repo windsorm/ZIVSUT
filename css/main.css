@@ -977,6 +977,11 @@ button {
   .notchatbot form .inner-form .input-field.second-wrap .btn-search {
     font-size: 13px;
   }
+  .roundMess {
+    padding: 5px;
+    border: 1px solid #989898;
+    border-radius: 25px;
+    background-color: rgb(243, 243, 243); 
 }
 
 /*# sourceMappingURL=Searchs_130.css.map */

@@ -7,13 +7,14 @@ $( document ).ready(function() {
         var s = $("#search").val()
         $(".inner-form").fadeOut()
         $(".info").fadeOut()
-        $(".notchatbot").append("<div>" + s + "</div>")
+        $(".notchatbot").append("<div class = \"roundMess\">" + s + "</div>")
     }
 
     $(".btn-search").on( "click", onSubmit);
     $( "#search" ).keypress(function( event ) {
         console.log("aaabbb")
         if ( event.which == 13 ) {
+            event.preventDefault();
             onSubmit()
         }
     })
