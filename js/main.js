@@ -5,9 +5,50 @@ $( document ).ready(function() {
     function onSubmit() {
         console.log("bbbbbb");
         var s = $("#search").val()
-        //€rrrr$(".inner-form").fadeOut()
-        $(".info").fadeOut()
-        $(".notchatbot").prepend("<div class = \"roundMess round left\">" + speak(s) + "</div>")
+        $("#search").val("")
+        $(".info").fadeOut();
+
+        if ($("#search-form").hasClass("first")) {
+            $("#search-form").fadeOut()
+        }
+
+        var utter = speak(s)
+        console.log(s, speak(s), speak)
+        if (utter == null) {
+            utter = {}
+            utter.isFinal = false
+            utter.text = "Tůtomu požadavku nerozumíme :/"
+        }
+
+        if (utter.isFinal) {
+            $("#search-form").fadeOut()
+        }
+
+        $("#conversation-log").append("<div class = \"roundMess round right text-right hidden\">" + s + "</div>")
+        $('#conversation-log').find(".roundMess:last").slideDown("slow", function() {
+
+            $("#conversation-log").append("<div class = \"roundMess round left hidden\">" + utter.text + "</div>")
+            $('#conversation-log').find(".roundMess:last").slideDown("slow", function() {
+
+
+
+
+                if (utter.isFinal) {
+                    $(".btn-success").fadeIn()
+                    $(".btn-danger").fadeIn()
+
+                    return;
+                }
+
+                if ($("#search-form").hasClass("first")) {
+                    $("#search-form").removeClass("first");
+
+                    $("#search-form").fadeIn()
+                }
+
+
+            });
+        });
     }
 
     $(".btn-search").on( "click", onSubmit);

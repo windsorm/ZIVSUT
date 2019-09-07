@@ -13,13 +13,13 @@ function getIntent(intent) {
 }
 
 intentActions = {
-    "demonstrace": "Zajděte na uřad pro povoleni o necem",
-    "ztráta": "A kde to bylo?",
-    "v tramvaji": "Zajděte na pmdp",
+    "demonstrace": { "text": "Zajděte na uřad pro povoleni o necem", "isFinal": true },
+    "ztráta": { "text": "A kde to bylo?", "isFinal": false },
+    "v tramvaji": { "text": "Zajděte na pmdp", "isFinal": true },
 }
 
 console.log(Object.keys(intentActions))
-for(var x of Object.keys(intentActions)) {
+for (var x of Object.keys(intentActions)) {
     commands.add(x)
 }
 

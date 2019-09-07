@@ -76,7 +76,7 @@
   display: flex;
   -ms-flex-align: center;
       align-items: center;
- 
+
 }
 
 .notchatbot form .inner-form .input-field.first-wrap input {
@@ -177,4 +177,12 @@
   background: #CE3B34;
 
 }
+.text-right {
+  text-align: right;
+}
+
+.hidden {
+  display: none;
+}
+
 /*# sourceMappingURL=Searchs_130.css.map */
