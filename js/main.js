@@ -41,6 +41,7 @@ $( document ).ready(function() {
                 }
 
                 if ($("#search-form").hasClass("first")) {
+                    $(".btn-search").text("Další")
                     $("#search-form").removeClass("first");
 
                     $("#search-form").fadeIn()
