@@ -61,4 +61,20 @@ $( document ).ready(function() {
         }
     })
 
+
+    $(".btn-success").on("click", function() {
+        $(".btn-success").fadeOut()
+        $(".btn-danger").fadeOut()
+
+        $("#conversation-log").append("<div class = \"roundMess round right text-right hidden\">+1</div>")
+        $('#conversation-log').find(".roundMess:last").slideDown("slow", function() {
+
+        });
+    })
+
+    $(".btn-danger").on("click", function() {
+        alert("zkuste to znovu")
+        location.reload();
+    });
+
 });
