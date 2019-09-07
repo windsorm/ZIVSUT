@@ -147,7 +147,6 @@
 .roundMess {
   height: 68px;
   width: 80%;
-  white-space: nowrap;
   font-size: 25px;
   color: #000;
   border: 1px solid #aaaaaa;
@@ -158,6 +157,7 @@
   padding: 20px 30px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .round{
   border-radius: 34px;
   margin: 10px;
@@ -169,20 +169,34 @@
   float: left;
 }
 
-#yesButton {
-  background: #28A036;
-}
-
-#noButton {
-  background: #CE3B34;
-
-}
 .text-right {
   text-align: right;
 }
 
 .hidden {
   display: none;
+}
+
+.btn-success{
+  background: #28A036;
+}
+
+.btn-danger {
+  background: #CE3B34;
+
+}
+
+.btn-rounded{
+  border-radius: 34px;
+  height: 68px;
+  font-size: 25px;
+  color: #ffffff;
+  border: 1px solid #aaaaaa;
+  font-weight: 300;
+  padding: 20px 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-right: 20px;
+
 }
 
 /*# sourceMappingURL=Searchs_130.css.map */
