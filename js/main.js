@@ -66,7 +66,7 @@ $( document ).ready(function() {
         $(".btn-success").fadeOut()
         $(".btn-danger").fadeOut()
 
-        $("#conversation-log").append("<div class = \"roundMess round right text-right hidden\">+1</div>")
+        $("#conversation-log").append("<div class = \"roundMess round left hidden\">+1</div>")
         $('#conversation-log').find(".roundMess:last").slideDown("slow", function() {
 
         });
