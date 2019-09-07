@@ -5,9 +5,9 @@ $( document ).ready(function() {
     function onSubmit() {
         console.log("bbbbbb");
         var s = $("#search").val()
-        $(".inner-form").fadeOut()
+        //€rrrr$(".inner-form").fadeOut()
         $(".info").fadeOut()
-        $(".notchatbot").append("<div class = \"roundMess\">" + speak(s) + "</div>")
+        $(".notchatbot").prepend("<div class = \"roundMess round left\">" + speak(s) + "</div>")
     }
 
     $(".btn-search").on( "click", onSubmit);

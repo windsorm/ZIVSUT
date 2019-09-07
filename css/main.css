@@ -1,15 +1,11 @@
-input,
-button {
-  font-family: 'Poppins', sans-serif;
-}
 
 * {
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 .notchatbot {
   min-height: 100vh;
-  font-family: 'Poppins', sans-serif;
    /*background: url("../images/Searchs_130.png"); */
   background-position: bottom right;
   background-repeat: no-repeat;
@@ -33,7 +29,8 @@ button {
       justify-content: space-between;
   -ms-flex-align: center;
       align-items: center;
-  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid #aaaaaa;
   overflow: hidden;
 }
 
@@ -53,17 +50,17 @@ button {
 }
 
 .notchatbot form .inner-form .input-field input.placeholder {
-  color: #222;
+  color: #aaaaaa;
   font-size: 16px;
 }
 
 .notchatbot form .inner-form .input-field input:-moz-placeholder {
-  color: #222;
+  color: #aaaaaa;
   font-size: 16px;
 }
 
 .notchatbot form .inner-form .input-field input::-webkit-input-placeholder {
-  color: #222;
+  color: #aaaaaa;
   font-size: 16px;
 }
 
@@ -79,12 +76,15 @@ button {
   display: flex;
   -ms-flex-align: center;
       align-items: center;
-  background: #d9f1e3;
+ 
 }
 
 .notchatbot form .inner-form .input-field.first-wrap input {
   -ms-flex-positive: 1;
-      flex-grow: 1;
+  flex-grow: 1;
+  /*text-align: right;*/
+  padding-left: 30px;
+  font-size: 25px;
 }
 
 .notchatbot form .inner-form .input-field.first-wrap .svg-wrapper {
@@ -105,26 +105,28 @@ button {
 }
 
 .notchatbot form .inner-form .input-field.second-wrap {
-  min-width: 100px;
+  min-width: 150px;
 }
 
 .notchatbot form .inner-form .input-field.second-wrap .btn-search {
   height: 100%;
   width: 100%;
   white-space: nowrap;
-  font-size: 13px;
-  color: #fff;
+  font-size: 25px;
+  color: #28A036;
   border: 0;
   cursor: pointer;
   position: relative;
   z-index: 0;
-  background: #00ad5f;
+  background: #fff;
   transition: all .2s ease-out, color .2s ease-out;
-  font-weight: 300;
+  font-weight: bold;
 }
 
 .notchatbot form .inner-form .input-field.second-wrap .btn-search:hover {
-  background: #009451;
+  background: #28A036;
+  color: #fff;
+  cursor: pointer;
 }
 
 .notchatbot form .inner-form .input-field.second-wrap .btn-search:focus {
@@ -140,19 +142,21 @@ button {
 .first{
   padding-top: 24vh;
   margin-bottom: 30px;
+  width: 100%!important;
 }
 .roundMess {
   height: 68px;
   width: 80%;
   white-space: nowrap;
-  font-size: 16px;
-  color: #fff;
-  border: 0;
+  font-size: 25px;
+  color: #000;
+  border: 1px solid #aaaaaa;
   position: relative;
   z-index: 0;
-  background: #00ad5f;
+  background: #fff;
   font-weight: 300;
   padding: 20px 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .round{
   border-radius: 34px;
