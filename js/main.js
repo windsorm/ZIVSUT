@@ -7,7 +7,7 @@ $( document ).ready(function() {
         var s = $("#search").val()
         $(".inner-form").fadeOut()
         $(".info").fadeOut()
-        $(".notchatbot").append("<div class = \"roundMess\">" + s + "</div>")
+        $(".notchatbot").append("<div class = \"roundMess\">" + speak(s) + "</div>")
     }
 
     $(".btn-search").on( "click", onSubmit);
