@@ -17,7 +17,7 @@ $( document ).ready(function() {
         if (utter == null) {
             utter = {}
             utter.isFinal = false
-            utter.text = "Tůtomu požadavku nerozumíme :/"
+            utter.text = "Bohužel nevíme, co odpovědět, zkuste dotaz zadat jinak."
         }
 
         if (utter.isFinal) {

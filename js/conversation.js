@@ -13,9 +13,16 @@ function getIntent(intent) {
 }
 
 intentActions = {
-    "demonstrace": { "text": "Zajděte na uřad pro povoleni o necem", "isFinal": true },
+    "demonstrace": { "text": "Kde bude demonstrace probíhat?", "isFinal": false },
+    "náměstí republiky": { "text": "Zajděte na Úřad městského obvodu Plzeň 3 </br> sady Pětatřicátníků 7-9, Plzeň </br> Dnes mají otevřeno do 17 hodin a v úterý do 14:30.", "isFinal": false },
     "ztráta": { "text": "A kde to bylo?", "isFinal": false },
     "v tramvaji": { "text": "Zajděte na pmdp", "isFinal": true },
+    "body řidičský průkaz": { "text": "Máte zřízený elektronický podpis?", "isFinal": false },
+    "nemám": { "text": "Zajděte si na Magistrát města Plzně, Odbor registru vozidel a řidičů v ulici Koterovská 162, Plzeň </br> Dnes mají otevřeno do 18 hodin a v úterý do 12:00.", "isFinal": true},
+    "ano": { "text": "Vyplňte si formulář elektronicky na stránce <a target=\"_blank\" href=\"https://form602.plzen.eu/aforms.php?action=webfiller&foaction=6&id_form=13&plz_obv=MMP&logout=1\">Elektronické podání občana</a>", "isFinal": true },
+    "manželství brát": { "text": "Jste Čech nebo cizinec?", "isFinal": false },
+    "čech cizinec": { "text": "Zajděte na Úřad městského obvodu Plzeň 3 </br> Odbor sociálních služeb a matriky, sady Pětatřicátníků 7-9, Plzeň</br> Dnes mají otevřeno do 17 hodin a v úterý do 12:00.", "isFinal": true },
+    
 }
 
 console.log(Object.keys(intentActions))
