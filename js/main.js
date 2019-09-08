@@ -24,7 +24,7 @@ $( document ).ready(function() {
             $("#search-form").fadeOut()
         }
 
-        $("#conversation-log").append("<div class = \"roundMess round right text-right hidden\">" + s + "</div>")
+        $("#conversation-log").append("<div class = \"roundMess round right text-right \">" + s + "</div>")
         $('#conversation-log').find(".roundMess:last").slideDown("slow", function() {
 
             $("#conversation-log").append("<div class = \"roundMess round left hidden\">" + utter.text + "</div>")
