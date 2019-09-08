@@ -45,6 +45,7 @@ $( document ).ready(function() {
                     $("#search-form").removeClass("first");
 
                     $("#search-form").fadeIn()
+                    $("#search").focus()
                 }
 
 
